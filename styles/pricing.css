@@ -229,7 +229,7 @@
 
 /* Membership Section */
 .membership-section {
-  padding: var(--space-xl) 0;
+  padding: var(--space-xl) 0 0 0;
   background: var(--color-white);
 }
 
@@ -437,7 +437,7 @@
 
 .membership-note {
   text-align: center;
-  margin-top: var(--space-xl);
+  margin-top: var(--space-lg);
   font-size: 0.95rem;
   color: var(--color-text);
 }
@@ -543,7 +543,14 @@
   /* membership-section (white) → pricing-faq (cream): DIFFERENT bg, keep bottom padding */
   .membership-section {
     padding-top: var(--space-lg);
-    padding-bottom: var(--space-lg);
+  }
+
+  .membership-note {
+    margin-top: var(--space-sm);
+  }
+
+  .column {
+    margin-bottom: var(--space-lg);
   }
 
   /* pricing-faq (cream) → cta-section (cream): SAME bg, remove bottom padding */
