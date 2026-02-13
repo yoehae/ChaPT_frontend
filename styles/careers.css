@@ -1,0 +1,403 @@
+/* ============================================
+   CAREERS PAGE STYLES
+   ============================================
+   Styles specific to the Careers page
+   Source: styles/styles.css (lines 2484-2717)
+   ============================================ */
+
+.careers-intro {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+.careers-intro .section-heading.large {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+.careers-intro .text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.careers-intro .text-column p {
+  margin-bottom: var(--space-md);
+  line-height: 1.8;
+}
+
+.careers-intro .two-column {
+  align-items: stretch;
+}
+
+.careers-intro .image-column {
+  display: flex;
+}
+
+.careers-intro .image-container {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.careers-intro .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile-only images: hidden on desktop */
+.careers-intro .mobile-only-image,
+.careers-rewarding .mobile-only-image,
+.careers-why .mobile-only-image,
+.open-roles-section .mobile-only-image {
+  display: none !important;
+}
+
+/* Desktop-only images: shown on desktop */
+.careers-intro .desktop-only-image,
+.careers-rewarding .desktop-only-image,
+.careers-why .desktop-only-image,
+.open-roles-section .desktop-only-image {
+  display: flex !important;
+}
+
+/* Rewarding Place Section */
+.careers-rewarding {
+  padding: var(--space-xl) 0;
+  background: var(--color-white);
+}
+
+.careers-rewarding .section-heading.large {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+.careers-rewarding .text-column p {
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+
+.careers-rewarding .two-column {
+  align-items: stretch;
+}
+
+.careers-rewarding .image-column {
+  display: flex;
+}
+
+.careers-rewarding .image-container {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+
+.careers-rewarding .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Benefits list styling */
+.careers-benefits-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: var(--space-md) 0;
+}
+
+.careers-benefits-list li {
+  margin-bottom: var(--space-sm);
+  line-height: 1.7;
+}
+
+/* Why Work at Cha Section */
+.careers-why {
+  padding: var(--space-xl) 0;
+  background: var(--color-white);
+}
+
+.careers-why .section-heading.large {
+  margin-bottom: var(--space-md);
+}
+
+.careers-why .section-subtitle {
+  max-width: 900px;
+  margin-bottom: var(--space-xl);
+  line-height: 1.8;
+}
+
+.careers-benefits-columns {
+  align-items: stretch;
+}
+
+.careers-benefits-columns h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-navy);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.careers-benefits-columns h3:first-child {
+  margin-top: 0;
+}
+
+.careers-benefits-columns .image-column {
+  display: flex;
+}
+
+.careers-benefits-columns .image-container {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+}
+
+.careers-benefits-columns .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Full-width image section */
+.careers-fullwidth-image {
+  padding: var(--space-lg) 0;
+  background: var(--color-white);
+}
+
+.careers-fullwidth-image .image-container {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.careers-fullwidth-image .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Open Roles Section */
+.open-roles-section {
+  padding: var(--space-xl) 0;
+  background: var(--color-white);
+}
+
+.open-roles-section .section-heading.large {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: var(--space-lg);
+}
+
+.open-roles-section h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-navy);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.open-roles-section h3:first-of-type {
+  margin-top: 0;
+}
+
+.careers-roles-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0 0 var(--space-md);
+}
+
+.careers-roles-list li {
+  margin-bottom: var(--space-xs);
+  line-height: 1.6;
+}
+
+.careers-contact-text {
+  margin-top: var(--space-lg);
+  line-height: 1.7;
+}
+
+.careers-contact-text a {
+  color: var(--color-olive);
+  text-decoration: underline;
+}
+
+.careers-eoe-text {
+  margin-top: var(--space-md);
+  font-style: italic;
+  color: var(--color-text-light);
+}
+
+.open-roles-section .two-column {
+  align-items: stretch;
+}
+
+.open-roles-section .image-column {
+  display: flex;
+}
+
+.open-roles-section .image-container {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.open-roles-section .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================
+   Media Queries - Careers Page
+   ============================================ */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Careers page responsive */
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .roles-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .roles-grid .role-category:last-child {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    justify-self: center;
+  }
+}
+
+/* Small Tablet / Single Column Layout (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Show mobile-only images on mobile */
+  .careers-intro .mobile-only-image,
+  .careers-rewarding .mobile-only-image,
+  .careers-why .mobile-only-image,
+  .open-roles-section .mobile-only-image {
+    display: block !important;
+    aspect-ratio: 1 / 1;
+    max-height: 350px;
+    margin-bottom: var(--space-md);
+    overflow: hidden;
+  }
+
+  /* Ensure content sections don't clip content */
+  .careers-intro,
+  .careers-rewarding,
+  .careers-why,
+  .open-roles-section {
+    overflow: visible;
+  }
+
+  /* Bigger h3 and li font sizes for mobile */
+  .careers-benefits-columns h3,
+  .open-roles-section h3 {
+    font-size: 1.4rem;
+  }
+
+  .careers-benefits-list li,
+  .careers-roles-list li {
+    font-size: 1.1rem;
+  }
+
+  /* Hide desktop-only images on mobile */
+  .careers-intro .desktop-only-image,
+  .careers-rewarding .desktop-only-image,
+  .careers-why .desktop-only-image,
+  .open-roles-section .desktop-only-image {
+    display: none !important;
+  }
+
+  /* Mobile image for careers-why section */
+  .careers-why-mobile-image {
+    margin-top: var(--space-md);
+  }
+
+  /* Careers page mobile */
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .roles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .roles-grid .role-category:last-child {
+    max-width: none;
+  }
+
+  .careers-intro .section-heading.large {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .careers-benefits-columns .image-container {
+    min-height: 400px;
+  }
+
+  .open-roles-section .image-container {
+    min-height: 350px;
+  }
+
+  .careers-rewarding .image-container {
+    min-height: 350px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .careers-intro {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-lg);
+  }
+
+  .careers-intro .section-heading.large {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .careers-rewarding .section-heading.large {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+  }
+
+  .open-roles-section .section-heading.large {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+  }
+
+  .careers-benefits-columns h3,
+  .open-roles-section h3 {
+    font-size: 1.25rem;
+  }
+
+  .careers-benefits-list li {
+    margin-bottom: var(--space-xs);
+    font-size: 1.05rem;
+  }
+
+  .careers-roles-list li {
+    font-size: 1.05rem;
+  }
+
+  .careers-intro .image-container {
+    min-height: 300px;
+  }
+
+  .careers-rewarding .image-container {
+    min-height: 300px;
+  }
+
+  .careers-benefits-columns .image-container {
+    min-height: 300px;
+  }
+
+  .open-roles-section .image-container {
+    min-height: 300px;
+  }
+}

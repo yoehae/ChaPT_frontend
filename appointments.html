@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book your physical therapy appointment at Cha Physical Therapy in Midtown NYC. Private, 1-on-1 sessions with our skilled physical therapists."
+    />
+    <meta
+      name="keywords"
+      content="book appointment, physical therapy appointment, NYC physical therapy, schedule therapy session"
+    />
+    <meta name="author" content="Cha Physical Therapy" />
+
+    <!-- Open Graph / Social Media -->
+    <meta
+      property="og:title"
+      content="Book an Appointment | Cha Physical Therapy"
+    />
+    <meta
+      property="og:description"
+      content="Take the first step towards feeling your best by booking a private, 1-1 session at Cha Physical Therapy."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.chaphysicaltherapy.com/appointments" />
+
+    <title>Book an Appointment | Cha Physical Therapy</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload critical fonts to prevent FOUC -->
+    <link
+      rel="preload"
+      href="./fonts/helvetica_regular.otf"
+      as="font"
+      type="font/opentype"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/avenir-light.ttf"
+      as="font"
+      type="font/truetype"
+      crossorigin
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/appointments.css" />
+  </head>
+  <body class="appointments-page">
+    <!-- Minimal Header -->
+    <header class="appointments-header">
+      <div class="header-container">
+        <a href="./index.html" class="logo" aria-label="Cha Physical Therapy Home">
+          <img
+            src="./images/chaLogo/chaLogo_brown.png"
+            alt="Cha Physical Therapy"
+            class="logo-image"
+          />
+        </a>
+        <a href="javascript:history.back()" class="go-back-link">
+          Go Back <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="appointments-main">
+      <div class="appointments-layout">
+        <!-- Left Column - Image -->
+        <div class="appointments-image">
+          <img
+            src="./images/treatments/treatments_first.jpeg"
+            alt="Woman in blue athletic wear smiling"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Right Column - Content & Form -->
+        <div class="appointments-content">
+          <h1>Book an Appointment Today</h1>
+
+          <p class="intro-text">
+            Take the first step towards feeling your best by booking a private, 1-1 session in our elevated clinical space. You'll meet with one of our skilled physical therapists to discuss your goals and build a custom treatment plan that's right for your body and lifestyle.
+          </p>
+
+          <div class="how-it-works">
+            <h2>Here's How it Works:</h2>
+            <ol>
+              <li>Fill out the form below so that we can better tailor your experience.</li>
+              <li>We'll reach out within 2 hours to finalize your appointment, confirm your insurance and medical details, and answer any questions you may have.</li>
+              <li>You'll then meet with your physical therapist, who will give their undivided attention towards assessing your needs, identifying sources of pain, and determining the best therapeutic techniques for treatment.</li>
+            </ol>
+          </div>
+
+          <p class="closing-text">
+            At Cha, we're dedicated to delivering high-quality care tailored to your needs. We look forward to beginning this journey with you!
+          </p>
+
+          <!-- Appointment Form -->
+          <div class="appointment-form-wrapper">
+            <form class="appointment-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name <span class="required">(required)</span></label>
+                  <input type="text" id="first-name" name="first_name" required />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name <span class="required">(required)</span></label>
+                  <input type="text" id="last-name" name="last_name" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+
+              <div class="form-group">
+                <label for="insurance-provider">Insurance <span class="required">*</span></label>
+                <input type="text" id="insurance-provider" name="insurance_provider" placeholder="Enter your insurance provider" required />
+              </div>
+
+              <div class="form-group">
+                <label for="insurance-member-id">Member ID <span class="required">*</span></label>
+                <input type="text" id="insurance-member-id" name="insurance_member_id" placeholder="Enter your insurance member ID" required />
+              </div>
+
+              <div class="form-group">
+                <label for="birthdate">Your Birthdate <span class="required">*</span></label>
+                <input type="date" id="birthdate" name="birthdate" required />
+              </div>
+
+              <div class="form-group">
+                <label for="referral-source">How did you hear about us?</label>
+                <select id="referral-source" name="referral_source">
+                  <option value="">Select an option</option>
+                  <option value="google">Google Search</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="friend">Friend or Family</option>
+                  <option value="doctor">Doctor Referral</option>
+                  <option value="insurance">Insurance Provider</option>
+                  <option value="yelp">Yelp</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell us how we can help:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="What are you struggling with?"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary appointments-submit">
+                Request Appointment
+              </button>
+
+              <p class="form-disclaimer">
+                By providing my phone number to Cha Physical Therapy, I agree and acknowledge that Cha Physical Therapy may send text messages to my wireless phone number for any purpose. Message and data rates may apply. No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties. Message frequency will vary, and you will be able to Opt-out by replying "STOP", assistance can be found by texting "HELP". For more information on how your data will be handled please visit <a href="privacy-policy.html">privacy policy</a>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer appointments-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="./index.html" class="logo" aria-label="Cha Physical Therapy Home">
+              <img
+                src="./images/chaLogo/chaLogo_brown.png"
+                alt="Cha Physical Therapy"
+                class="logo-image"
+              />
+            </a>
+            <p class="footer-slogan">Life Starts Here.</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Location</h3>
+            <address>
+              16 W 32nd Street, Suite 1007,<br />
+              NYC 10001
+            </address>
+          </div>
+
+          <div class="footer-column">
+            <h3>Clinic Hours</h3>
+            <p>Mon-Fri: 9:00AM - 7:00PM</p>
+            <p>Sat-Sun: Closed</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>
+              E:
+              <a href="mailto:chaphysicaltherapy@gmail.com"
+                >chaphysicaltherapy@gmail.com</a
+              >
+            </p>
+            <p>P: <a href="tel:+12126439326">(212) 643-9326</a></p>
+            <p>F: 212-643-9330</p>
+            <p>Text: <a href="sms:+17185066239">718-506-6239</a></p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-links">
+            <a
+              href="https://instagram.com/chaphysicaltherapy"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle cx="18" cy="6" r="1.5" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/company/chaphysicaltherapy"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <rect
+                  x="2"
+                  y="9"
+                  width="4"
+                  height="12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="4"
+                  cy="4"
+                  r="2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://facebook.com/chaphysicaltherapy"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://tiktok.com/@chaphysicaltherapy"
+              aria-label="TikTok"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <path
+                  d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://g.page/chaphysicaltherapy"
+              aria-label="Google Business"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <text
+                  x="6"
+                  y="18"
+                  font-size="16"
+                  font-weight="bold"
+                  fill="currentColor"
+                >
+                  G
+                </text>
+              </svg>
+            </a>
+          </div>
+          <a href="privacy-policy.html" class="privacy-link">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

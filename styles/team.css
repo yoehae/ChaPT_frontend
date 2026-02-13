@@ -1,0 +1,185 @@
+/* ============================================
+   TEAM PAGE STYLES
+   ============================================
+   Styles specific to the Team page
+   Source: styles/styles.css (lines 1778-1891)
+   ============================================ */
+
+.team-intro {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+.team-intro .section-heading.large {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+.team-intro .text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-intro .text-column p {
+  margin-bottom: var(--space-md);
+}
+
+.team-intro .image-column .image-container {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.team-intro .image-column .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-section {
+  padding: var(--space-lg) 0;
+  background: var(--color-white);
+}
+
+.team-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+}
+
+.team-card {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.team-card:nth-child(even) {
+  direction: rtl;
+}
+
+.team-card:nth-child(even) > * {
+  direction: ltr;
+}
+
+.team-card .image-container {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+}
+
+.team-card .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-navy);
+  margin-bottom: var(--space-xs);
+}
+
+.team-title {
+  font-size: 1.1rem;
+  color: var(--color-olive);
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+}
+
+.credentials {
+  background: var(--color-cream);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+
+.credentials p {
+  margin-bottom: var(--space-xs);
+}
+
+.credentials ul {
+  margin: 0;
+  padding-left: var(--space-md);
+}
+
+.credentials li {
+  margin-bottom: var(--space-xs);
+  font-size: 0.95rem;
+}
+
+.bio p {
+  margin-bottom: var(--space-sm);
+  line-height: 1.8;
+}
+
+/* ============================================
+   Media Queries - Team Page
+   ============================================ */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Team page responsive */
+  .team-card {
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-md);
+  }
+}
+
+/* Small Tablet / Single Column Layout (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Remove top padding for first section on team page */
+  .team-section {
+    padding-top: 0;
+  }
+
+  /* Team page mobile */
+  .team-card {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .team-card:nth-child(even) {
+    direction: ltr;
+  }
+
+  .team-card .image-container {
+    aspect-ratio: 1 / 1;
+    max-width: 100%;
+  }
+
+  .team-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .team-intro .section-heading.large {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .team-intro {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-lg);
+  }
+
+  .team-intro .section-heading.large {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .team-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .team-title {
+    font-size: 1rem;
+  }
+
+  .credentials {
+    padding: var(--space-sm);
+  }
+}

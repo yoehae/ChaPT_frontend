@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Transparent pricing and insurance information for physical therapy at Cha Physical Therapy in NYC. Membership plans, flexible payment options, and expert guidance on coverage."
+    />
+    <meta
+      name="keywords"
+      content="physical therapy pricing, insurance coverage, membership plans, flexible payment, NYC physical therapy costs"
+    />
+    <meta name="author" content="Cha Physical Therapy" />
+
+    <!-- Open Graph / Social Media -->
+    <meta
+      property="og:title"
+      content="Pricing | Cha Physical Therapy"
+    />
+    <meta
+      property="og:description"
+      content="Explore transparent pricing, insurance options, and membership plans at Cha Physical Therapy. We work with most major insurance providers."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.chaphysicaltherapy.com/pricing" />
+
+    <title>Pricing | Cha Physical Therapy</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload critical fonts to prevent FOUC -->
+    <link
+      rel="preload"
+      href="./fonts/helvetica_regular.otf"
+      as="font"
+      type="font/opentype"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/avenir-light.ttf"
+      as="font"
+      type="font/truetype"
+      crossorigin
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/pricing.css" />
+  </head>
+  <body class="no-hero">
+    <!-- Header -->
+    <header class="site-header scrolled">
+      <div class="header-container">
+        <a href="./index.html" class="logo" aria-label="Cha Physical Therapy Home">
+          <img
+            src="./images/chaLogo/chaLogo_brown.png"
+            alt="Cha Physical Therapy"
+            class="logo-image"
+          />
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="./treatments.html">Treatments</a></li>
+            <li><a href="./team.html">Team</a></li>
+            <li><a href="./our-space.html">Our Space</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li class="has-dropdown"><a href="./pricing.html" class="active">Pricing</a><ul class="dropdown-menu"><li><a href="./pricing.html">Insurance</a></li><li><a href="./memberships.html">Memberships</a></li></ul></li>
+            <li><a href="./botox.html">Botox</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+          <div class="mobile-nav-ctas">
+            <a href="tel:+12126439326" class="btn btn-outline">Call Us</a>
+            <a href="./appointments.html" class="btn btn-primary">Book an Appointment</a>
+          </div>
+        </nav>
+
+        <button
+          class="mobile-menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="hamburger"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="header-ctas">
+          <a href="tel:+12126439326" class="btn btn-outline">Call Us</a>
+          <a href="./appointments.html" class="btn btn-outline">Book an Appointment</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Intro Section: We Accept Most Major Insurance Plans -->
+      <section
+        class="content-section pricing-intro"
+        aria-labelledby="pricing-intro-heading"
+      >
+        <div class="container two-column">
+          <div class="column text-column">
+            <h1 id="pricing-intro-heading" class="section-heading navy large">
+              We Accept Most Major Insurance Plans
+            </h1>
+            <!-- Mobile-only image: appears right after h1 -->
+            <div class="image-container mobile-only-image">
+              <img
+                src="./images/pricing/pricing_first.png"
+                alt="Cha Physical Therapy clinic reception area"
+                loading="lazy"
+              />
+            </div>
+            <p>
+              Our clinic works with most major insurance providers, and we handle
+              all billing on your behalf—giving you the convenience of a
+              traditional medical office with a smoother, more modern experience.
+            </p>
+            <p>
+              From the moment you book, our team helps you understand your
+              benefits and what's covered. Whether you're coming in for injury
+              rehabilitation, chronic pain, pain management, post-surgical care,
+              or routine treatment, we'll help you maximize your insurance benefits.
+            </p>
+            <div class="pricing-intro-buttons">
+              <a href="./appointments.html" class="btn btn-primary pricing-main-btn">Book an Appointment</a>
+              <div class="secondary-buttons">
+                <a href="#insurance-section" class="btn btn-primary pricing-half-btn">View Providers</a>
+              </div>
+              <a href="./memberships.html" class="btn btn-primary pricing-membership-btn">View Membership Plans</a>
+            </div>
+          </div>
+          <!-- Desktop-only image column -->
+          <div class="column image-column desktop-only-image">
+            <div class="image-container">
+              <img
+                src="./images/pricing/pricing_first.png"
+                alt="Cha Physical Therapy clinic reception area"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Have questions about your plan? -->
+      <section class="pricing-questions-section" aria-labelledby="plan-questions-heading">
+        <div class="container two-column">
+          <div class="column image-column">
+            <div class="image-container">
+              <img
+                src="./images/pricing/pricing_second.jpg"
+                alt="Physical therapist working with patient"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="column text-column">
+            <h2 id="plan-questions-heading" class="section-heading navy">
+              Have questions about your plan?
+            </h2>
+            <p>
+              We verify your coverage and walk you through your options in a clear,
+              supportive, and stress-free way. Here's how we support you:
+            </p>
+            <ul class="pricing-support-list">
+              <li>
+                <strong>We accept most major insurance plans</strong> and file
+                claims on your behalf.
+              </li>
+              <li>
+                <strong>Our team verifies your benefits</strong> (including any
+                referral requirements, visit limits, or prior authorizations)
+                before or at your first visit.
+              </li>
+              <li>
+                <strong>We'll explain your coverage clearly</strong> — ask us
+                anything about copays, deductibles, or out-of-pocket costs.
+              </li>
+              <li>
+                <strong>Before starting treatment</strong>, we provide a detailed
+                estimate of your responsibility after insurance, including any
+                applicable deductibles or coinsurance.
+              </li>
+            </ul>
+            <div class="section-buttons">
+              <a href="#insurance-section" class="btn btn-primary">View Providers</a>
+              <a href="./memberships.html" class="btn btn-primary">View Membership Plans</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Insurance Section -->
+      <section
+        class="insurance-section"
+        id="insurance-section"
+        aria-labelledby="insurance-heading"
+      >
+        <div class="container two-column">
+          <div class="column">
+            <h2 id="insurance-heading">Our Insurance</h2>
+            <p>We are happy to accept most insurance plans, including:</p>
+            <ul class="insurance-list">
+              <li>Anthem Blue Cross Blue Shield</li>
+              <li>Blue Cross of California</li>
+              <li>Fidelis Care New York</li>
+              <li>United Healthcare AARP</li>
+              <li>United Healthcare Oxford</li>
+              <li>United Healthcare Choice Plus</li>
+              <li>United Healthcare Community Plan</li>
+              <li>Cigna</li>
+              <li>Aetna</li>
+            </ul>
+          </div>
+          <div class="column">
+            <div class="insurance-form-wrapper">
+              <h2>Check your insurance</h2>
+              <p>
+                Curious if insurance will cover your sessions? We can tell you in
+                just a few seconds.
+              </p>
+              <form
+                class="insurance-form"
+                action="/check-insurance"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="insurance-provider"
+                    >Your Insurance Provider
+                    <span class="required">*</span></label
+                  >
+                  <select
+                    id="insurance-provider"
+                    name="insurance_provider"
+                    required
+                  >
+                    <option value="">Select an option</option>
+                    <option value="anthem">Anthem Blue Cross Blue Shield</option>
+                    <option value="bluecross">Blue Cross of California</option>
+                    <option value="fidelis">Fidelis Care New York</option>
+                    <option value="united">United Healthcare</option>
+                    <option value="cigna">Cigna</option>
+                    <option value="aetna">Aetna</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <p class="insurance-note">
+          Unfortunately, there are some insurance plans we don't accept. If we
+          don't take yours, we'll contact you ahead of your visit.
+        </p>
+
+        <!-- Insurance Logos - Scrolling Marquee -->
+        <div class="insurance-logos" aria-label="Accepted insurance providers">
+          <div class="insurance-logos-track">
+            <!-- First set of logos -->
+            <img
+              class="insuranceLogo anthem"
+              src="./images/insuranceLogos/anthemBCBS.png"
+              alt="Anthem Blue Cross Blue Shield"
+            />
+            <img
+              class="insuranceLogo uh"
+              src="./images/insuranceLogos/UH.png"
+              alt="United Healthcare"
+            />
+            <img
+              class="insuranceLogo fidelis"
+              src="./images/insuranceLogos/fidelis.png"
+              alt="Fidelis Insurance Group"
+            />
+            <img
+              class="insuranceLogo cigna"
+              src="./images/insuranceLogos/cigna.png"
+              alt="Cigna Healthcare"
+            />
+            <img
+              class="insuranceLogo aetna"
+              src="./images/insuranceLogos/aetna.png"
+              alt="Aetna"
+            />
+            <!-- Duplicate set for seamless loop -->
+            <img
+              class="insuranceLogo anthem"
+              src="./images/insuranceLogos/anthemBCBS.png"
+              alt="Anthem Blue Cross Blue Shield"
+            />
+            <img
+              class="insuranceLogo uh"
+              src="./images/insuranceLogos/UH.png"
+              alt="United Healthcare"
+            />
+            <img
+              class="insuranceLogo fidelis"
+              src="./images/insuranceLogos/fidelis.png"
+              alt="Fidelis Insurance Group"
+            />
+            <img
+              class="insuranceLogo cigna"
+              src="./images/insuranceLogos/cigna.png"
+              alt="Cigna Healthcare"
+            />
+            <img
+              class="insuranceLogo aetna"
+              src="./images/insuranceLogos/aetna.png"
+              alt="Aetna"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- How we handle insurance, step-by-step -->
+      <section class="pricing-steps-section" aria-labelledby="steps-heading">
+        <div class="container">
+          <h2 id="steps-heading" class="section-heading navy center">
+            How we handle insurance, step-by-step
+          </h2>
+          <p class="section-subtitle center">
+            We want you to know exactly what to expect. Here's our straightforward process:
+          </p>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <span class="step-label">Step 1</span>
+              <h3>Upfront Insurance Check</h3>
+              <p>
+                When you book or arrive, we confirm your coverage details,
+                including any referral needs, authorization requirements, or
+                visit limits.
+              </p>
+            </div>
+
+            <div class="step-card">
+              <span class="step-label">Step 2</span>
+              <h3>Treatment plan & estimate</h3>
+              <p>
+                We create a personalized plan based on your evaluation and provide
+                a clear breakdown of covered services and your estimated
+                out-of-pocket costs.
+              </p>
+            </div>
+
+            <div class="step-card">
+              <span class="step-label">Step 3</span>
+              <h3>Claim submission & Follow-up</h3>
+              <p>
+                After each session or treatment phase, we submit claims for you.
+                If there's a remaining balance after insurance processes, we'll
+                send a clear statement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Understanding your bill -->
+      <section class="pricing-bill-section" aria-labelledby="bill-heading">
+        <div class="container two-column">
+          <div class="column text-column">
+            <h2 id="bill-heading" class="section-heading navy">
+              Understanding your bill
+            </h2>
+            <p>
+              Occasional differences between estimates and final bills can occur
+              due to changes in coverage, unmet deductibles, or insurer adjustments.
+            </p>
+            <p>
+              We're committed to transparency — you'll always receive itemized,
+              easy-to-understand statements, and our team is here to explain
+              any charges.
+            </p>
+          </div>
+          <div class="column image-column">
+            <div class="image-container">
+              <img
+                src="./images/pricing/pricing_third.jpeg"
+                alt="Cha Physical Therapy staff member at reception"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- No insurance or out-of-network? -->
+      <section class="pricing-options-section" aria-labelledby="options-heading">
+        <div class="container">
+          <h2 id="options-heading" class="section-heading navy center">
+            No insurance or out-of-network? We've got options.
+          </h2>
+        </div>
+        <div class="container two-column">
+          <div class="column text-column">
+            <p>
+              <strong>Even if you're out-of-network with us</strong>, we accept
+              members with out-of-network benefits insurance plans. In many cases,
+              because of these benefits, <strong>what you pay may be equal to or
+              even less than what you would pay at an in-network clinic</strong>,
+              without compromising the quality or length of your care.
+            </p>
+            <p>Here's how we keep treatment accessible:</p>
+            <ol class="pricing-accessible-list">
+              <li>
+                <strong>Transparent self-pay pricing</strong><br />
+                Upfront quotes for all services so you can plan confidently.
+              </li>
+              <li>
+                <strong>Flexible payment plans</strong><br />
+                Interest-free options to spread costs over time.
+              </li>
+              <li>
+                <strong>Superbills for reimbursement</strong><br />
+                For out-of-network plans, we provide detailed superbills to
+                submit for potential reimbursement.
+              </li>
+              <li>
+                <strong>Package rates</strong><br />
+                Discounted packages for multiple sessions when paying privately.
+              </li>
+              <li>
+                <strong>Prioritize what matters</strong><br />
+                We tailor plans to focus on essential recovery first while
+                building long-term wellness.
+              </li>
+            </ol>
+          </div>
+          <div class="column image-column">
+            <div class="image-container">
+              <img
+                src="./images/pricing/pricing_fourth.jpg"
+                alt="Physical therapy treatment session"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section pricing-faq" aria-labelledby="faq-heading">
+        <div class="container">
+          <h2 id="faq-heading" class="section-heading navy center">
+            Have questions? We're here to help.
+          </h2>
+
+          <div class="accordion">
+            <details class="accordion-item">
+              <summary>Do I need a referral or prescription for physical therapy?</summary>
+              <div class="accordion-content">
+                <p class="accordion-content-inner">
+                  New York allows direct access to physical therapy — you can start
+                  treatment without a doctor's referral in most cases. However, some
+                  insurance plans may require a referral for coverage. Our team will
+                  verify this for you.
+                </p>
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary>How many physical therapy visits does insurance typically cover?</summary>
+              <div class="accordion-content">
+                <p class="accordion-content-inner">
+                  Coverage varies widely. Many plans allow 20–60 visits per year, but
+                  some have limits based on condition or calendar year. We'll verify
+                  your specific benefits before treatment begins.
+                </p>
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary>What if I'm out-of-network?</summary>
+              <div class="accordion-content">
+                <p class="accordion-content-inner">
+                  We happily see out-of-network patients and provide superbills for
+                  you to submit for reimbursement. Many patients find their
+                  out-of-network benefits make our care surprisingly affordable.
+                </p>
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary>Does Medicare cover physical therapy?</summary>
+              <div class="accordion-content">
+                <p class="accordion-content-inner">
+                  Yes — Medicare Part B covers medically necessary outpatient
+                  physical therapy. There may be copays (typically 20% after
+                  deductible). We accept Medicare and will handle the billing.
+                </p>
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary>Why might I still owe money with insurance?</summary>
+              <div class="accordion-content">
+                <p class="accordion-content-inner">
+                  Most plans include deductibles, copays per visit, or coinsurance.
+                  Once you reach plan limits or annual caps, you may be responsible
+                  for remaining costs. We provide estimates upfront so there are no surprises.
+                </p>
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary>What if my claim is denied?</summary>
+              <div class="accordion-content">
+                <p class="accordion-content-inner">
+                  We'll help you understand the reason and assist with appeals or
+                  resubmissions when possible. Our billing team has experience
+                  navigating insurance challenges.
+                </p>
+              </div>
+            </details>
+          </div>
+
+          <p class="faq-note">
+            If your question isn't covered here, contact us — our team is ready
+            to check your benefits and answer personally.
+          </p>
+        </div>
+      </section>
+
+      <!-- Dedication CTA -->
+      <section class="cta-section cta-cream cta-padded" aria-labelledby="cta-heading">
+        <div class="container text-center">
+          <h2 id="cta-heading" class="cta-heading olive">
+            We're dedicated to getting you back to your best.
+          </h2>
+          <p>
+            With personalized physical therapy programs and compassionate,
+            expert care, we raise the bar for what rehabilitation can achieve.
+          </p>
+          <a href="./appointments.html" class="btn btn-primary biggerBtn"
+            >Book an Appointment</a
+          >
+        </div>
+      </section>
+
+      <!-- Getting Here Section -->
+      <section class="location-section" aria-labelledby="location-heading">
+        <div class="container two-column">
+          <div class="column">
+            <h2 id="location-heading">Getting Here</h2>
+            <p>
+              Our Midtown Clinic is at 16 West 32nd Street, Suite 1007, 3-5
+              minutes from Herald Square and a few blocks from Penn Station.
+            </p>
+
+            <div class="subway-lines">
+              <div class="subway-row">
+                <span class="station">34th Herald Sq.</span>
+                <div class="connector-line"></div>
+                <div class="line-badges">
+                  <span class="badge orange">B</span>
+                  <span class="badge orange">D</span>
+                  <span class="badge orange">F</span>
+                  <span class="badge orange">M</span>
+                  <span class="badge yellow">N</span>
+                  <span class="badge yellow">Q</span>
+                  <span class="badge yellow">R</span>
+                  <span class="badge yellow">W</span>
+                </div>
+              </div>
+              <div class="subway-row">
+                <span class="station">34th Penn Station</span>
+                <div class="connector-line"></div>
+                <div class="line-badges">
+                  <span class="badge blue">A</span>
+                  <span class="badge blue">C</span>
+                  <span class="badge blue">E</span>
+                  <span class="badge red">1</span>
+                  <span class="badge red">2</span>
+                  <span class="badge red">3</span>
+                </div>
+              </div>
+              <div class="subway-row">
+                <span class="station">33rd St (Lexington Ave)</span>
+                <div class="connector-line"></div>
+                <div class="line-badges">
+                  <span class="badge green">6</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="clinic-hours">
+              <h3>Clinic Hours</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Monday</td>
+                    <td>9AM - 7PM</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>9AM - 7PM</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>9AM - 7PM</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>9AM - 7PM</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>9AM - 7PM</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>9AM - 3:30PM</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="column map">
+            <div class="map-container">
+              <link
+                rel="stylesheet"
+                href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+              />
+              <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+              <div id="map"></div>
+              <script>
+                const map = L.map("map").setView([40.747437, -73.9867093], 13);
+                L.tileLayer(
+                  "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                ).addTo(map);
+                L.marker([40.747437, -73.9867093])
+                  .addTo(map)
+                  .bindPopup("Cha Physical Therapy<br>16 W 32nd St, Suite 1007")
+                  .openPopup();
+              </script>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="./index.html" class="logo" aria-label="Cha Physical Therapy Home">
+              <img
+                src="./images/chaLogo/chaLogo_brown.png"
+                alt="Cha Physical Therapy"
+                class="logo-image"
+              />
+            </a>
+            <p class="footer-slogan">Life Starts Here.</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Location</h3>
+            <address>
+              16 W 32nd Street, Suite 1007,<br />
+              NYC 10001
+            </address>
+          </div>
+
+          <div class="footer-column">
+            <h3>Clinic Hours</h3>
+            <p>Mon-Fri: 9:00AM - 7:00PM</p>
+            <p>Sat-Sun: Closed</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>
+              E:
+              <a href="mailto:chaphysicaltherapy@gmail.com"
+                >chaphysicaltherapy@gmail.com</a
+              >
+            </p>
+            <p>P: <a href="tel:+12126439326">(212) 643-9326</a></p>
+            <p>F: 212-643-9330</p>
+            <p>Text: <a href="sms:+17185066239">718-506-6239</a></p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-links">
+            <a
+              href="https://instagram.com/chaphysicaltherapy"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle cx="18" cy="6" r="1.5" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/company/chaphysicaltherapy"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <rect
+                  x="2"
+                  y="9"
+                  width="4"
+                  height="12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="4"
+                  cy="4"
+                  r="2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://facebook.com/chaphysicaltherapy"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://tiktok.com/@chaphysicaltherapy"
+              aria-label="TikTok"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <path
+                  d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://g.page/chaphysicaltherapy"
+              aria-label="Google Business"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <text
+                  x="6"
+                  y="18"
+                  font-size="16"
+                  font-weight="bold"
+                  fill="currentColor"
+                >
+                  G
+                </text>
+              </svg>
+            </a>
+          </div>
+          <a href="privacy-policy.html" class="privacy-link">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-overlay" aria-hidden="true"></div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

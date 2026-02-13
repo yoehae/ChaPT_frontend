@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Cha Physical Therapy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .admin-header {
+            background: #1a1a4e;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .admin-header h1 {
+            font-size: 1.5rem;
+        }
+
+        .admin-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .admin-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .admin-nav a:hover,
+        .admin-nav a.active {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-card h3 {
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card .number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1a1a4e;
+        }
+
+        .stat-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #6b7b3c;
+            text-decoration: none;
+        }
+
+        .stat-card a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .welcome-card h2 {
+            color: #1a1a4e;
+            margin-bottom: 1rem;
+        }
+
+        .welcome-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Cha PT Admin</h1>
+        <nav class="admin-nav">
+            <a href="./dashboard" class="active">Dashboard</a>
+            <a href="./insurance">Insurance</a>
+            <a href="./appointments">Appointments</a>
+            <a href="./emails">Email List</a>
+            <a href="../index.html">← Back to Site</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Insurance Submissions</h3>
+                <div class="number">{{.InsuranceCount}}</div>
+                <a href="./insurance">View all →</a>
+            </div>
+            <div class="stat-card">
+                <h3>Appointment Requests</h3>
+                <div class="number">{{.AppointmentCount}}</div>
+                <a href="./appointments">View all →</a>
+            </div>
+        </div>
+
+        <div class="welcome-card">
+            <h2>Welcome to the Admin Dashboard</h2>
+            <p>Use the navigation above to view form submissions. You'll receive email notifications at chaphysicaltherapy@gmail.com whenever someone submits a form.</p>
+        </div>
+    </div>
+</body>
+</html>

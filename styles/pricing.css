@@ -1,0 +1,633 @@
+/* ============================================
+   PRICING PAGE STYLES
+   ============================================
+   Styles specific to the Pricing page
+   Source: styles/styles.css (lines 1892-2376)
+   ============================================ */
+
+.pricing-intro {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-md);
+}
+
+.pricing-intro .image-column {
+  display: flex;
+  align-items: stretch;
+}
+
+.pricing-intro .image-container {
+  height: 100%;
+  min-height: 400px;
+}
+
+.pricing-intro .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pricing-intro .section-heading.large {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+.pricing-intro .text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-intro .text-column p {
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+.pricing-intro-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.pricing-main-btn {
+  text-align: center;
+}
+
+.pricing-intro-buttons .secondary-buttons {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.pricing-half-btn {
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.pricing-membership-btn {
+  text-align: center;
+}
+
+/* Mobile-only image: hidden on desktop */
+.pricing-intro .mobile-only-image {
+  display: none;
+}
+
+/* Desktop-only image: shown on desktop */
+.pricing-intro .desktop-only-image {
+  display: flex;
+}
+
+.section-subtitle {
+  max-width: 800px;
+  margin: 0 auto var(--space-lg);
+}
+
+.section-subtitle.center {
+  text-align: center;
+}
+
+.section-buttons {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-top: var(--space-md);
+}
+
+/* Have questions about your plan section */
+.pricing-questions-section {
+  padding: var(--space-lg) 0 var(--space-xl);
+  background: var(--color-white);
+}
+
+.pricing-questions-section .image-column {
+  display: flex;
+  align-items: stretch;
+}
+
+.pricing-questions-section .image-container {
+  height: 100%;
+  min-height: 400px;
+}
+
+.pricing-questions-section .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pricing-support-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: var(--space-md) 0;
+}
+
+.pricing-support-list li {
+  margin-bottom: var(--space-sm);
+  line-height: 1.7;
+}
+
+.pricing-support-list li strong {
+  color: var(--color-navy);
+}
+
+/* Steps section */
+.pricing-steps-section {
+  padding: var(--space-xl) 0;
+  background: var(--color-white);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.step-card {
+  padding: var(--space-md);
+}
+
+.step-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.step-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: var(--space-sm);
+}
+
+.step-card p {
+  line-height: 1.7;
+}
+
+/* Understanding your bill section */
+.pricing-bill-section {
+  padding: var(--space-xl) 0;
+  background: var(--color-white);
+}
+
+.pricing-bill-section .text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-bill-section .text-column p {
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+.pricing-bill-section .image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* No insurance / out-of-network section */
+.pricing-options-section {
+  padding: var(--space-xl) 0;
+  background: var(--color-white);
+}
+
+.pricing-options-section .section-heading.center {
+  margin-bottom: var(--space-lg);
+}
+
+.pricing-options-section .text-column p {
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+.pricing-accessible-list {
+  padding-left: 1.5rem;
+  margin: var(--space-md) 0;
+}
+
+.pricing-accessible-list li {
+  margin-bottom: var(--space-md);
+  line-height: 1.6;
+}
+
+.pricing-accessible-list li strong {
+  color: var(--color-navy);
+}
+
+.pricing-options-section .image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Membership Section */
+.membership-section {
+  padding: var(--space-xl) 0;
+  background: var(--color-white);
+}
+
+.membership-label {
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: var(--color-olive);
+  margin-bottom: var(--space-sm);
+}
+
+/* Single Session Box */
+.single-session-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-lg) auto;
+  max-width: 600px;
+}
+
+.single-session-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.session-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+}
+
+.session-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-navy);
+}
+
+.single-session-price {
+  text-align: right;
+}
+
+.single-session-price .price-amount {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-navy);
+}
+
+.single-session-price .price-unit {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.membership-divider {
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  margin: var(--space-lg) 0;
+}
+
+/* Membership Plans Grid */
+.membership-plans {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-md);
+}
+
+.plan-card {
+  background: var(--color-white);
+  border: 1px solid #e5e5e5;
+  padding: var(--space-lg) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.plan-card.best-value {
+  background: var(--color-brown);
+  color: var(--color-white);
+  border-color: var(--color-brown);
+}
+
+.best-value-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-olive);
+  color: var(--color-white);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.plan-header {
+  margin-bottom: var(--space-md);
+}
+
+.plan-tier {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+}
+
+.plan-card.best-value .plan-tier {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.plan-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--color-navy);
+  margin-bottom: 0.25rem;
+}
+
+.plan-card.best-value h3 {
+  color: var(--color-white);
+}
+
+.plan-tagline {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.plan-card.best-value .plan-tagline {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.plan-price {
+  margin-bottom: var(--space-sm);
+}
+
+.plan-price .price-amount {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  color: var(--color-navy);
+}
+
+.plan-card.best-value .plan-price .price-amount {
+  color: var(--color-white);
+}
+
+.plan-price .price-details {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.plan-card.best-value .plan-price .price-details {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.plan-savings {
+  display: inline-block;
+  background: var(--color-cream);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-olive);
+  margin-bottom: var(--space-md);
+}
+
+.plan-card.best-value .plan-savings {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-md);
+  flex: 1;
+}
+
+.plan-features li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.plan-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-olive);
+}
+
+.plan-card.best-value .plan-features li::before {
+  color: var(--color-white);
+}
+
+.plan-card .btn {
+  margin-top: auto;
+  text-align: center;
+}
+
+.membership-note {
+  text-align: center;
+  margin-top: var(--space-xl);
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+/* FAQ Section for Pricing - uses shared accordion styles from styles.css */
+.pricing-faq {
+  background: var(--color-cream);
+  padding: var(--space-xl) 0;
+}
+
+.pricing-faq .accordion {
+  max-width: 800px;
+  margin: var(--space-lg) auto 0;
+}
+
+.faq-note {
+  text-align: center;
+  margin-top: var(--space-lg);
+  font-style: italic;
+  color: var(--color-text-light);
+}
+
+/* ============================================
+   Media Queries - Pricing Page
+   ============================================ */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Pricing page tablet */
+  .membership-plans {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .plan-card.best-value {
+    grid-column: span 1;
+  }
+
+  /* Pricing page responsive */
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+}
+
+/* Small Tablet / Single Column Layout (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Pricing page mobile - Fix overflow */
+  .pricing-intro {
+    overflow-x: hidden;
+    padding-bottom: 0;
+  }
+
+  /* Show mobile-only image on mobile */
+  .pricing-intro .mobile-only-image {
+    display: block;
+    min-height: 280px;
+    margin-bottom: var(--space-md);
+  }
+
+  /* Hide desktop-only image on mobile */
+  .pricing-intro .desktop-only-image {
+    display: none;
+  }
+
+  /* Ensure h1 is prominent on mobile */
+  .pricing-intro .section-heading.large {
+    font-size: clamp(2.25rem, 9vw, 3rem);
+  }
+
+  /* Membership button on its own row */
+  .pricing-membership-btn {
+    width: 100%;
+  }
+
+  /* Fix doubled gaps between sections with SAME background color */
+  /* pricing-intro (white) → pricing-questions-section (white): keep gap between these two */
+  /* pricing-questions-section (white) → insurance-section (cream): DIFFERENT bg, keep bottom */
+  .pricing-questions-section {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+
+  /* insurance-section (cream) has DIFFERENT bg from neighbors, keep its padding */
+
+  /* pricing-steps-section (white) → pricing-bill-section (white) */
+  .pricing-steps-section {
+    padding-top: var(--space-lg);
+    padding-bottom: 0;
+  }
+
+  /* pricing-bill-section (white) → pricing-options-section (white) */
+  .pricing-bill-section {
+    padding-top: var(--space-lg);
+    padding-bottom: 0;
+  }
+
+  /* pricing-options-section (white) → membership-section (white) */
+  .pricing-options-section {
+    padding-top: var(--space-lg);
+    padding-bottom: 0;
+  }
+
+  /* membership-section (white) → pricing-faq (cream): DIFFERENT bg, keep bottom padding */
+  .membership-section {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+
+  /* pricing-faq (cream) → cta-section (cream): SAME bg, remove bottom padding */
+  .pricing-faq {
+    padding-top: var(--space-lg);
+    padding-bottom: 0;
+  }
+
+  /* cta-section (cream) → location-section (white): DIFFERENT bg, keep padding */
+  /* Override cta-section padding for mobile to use consistent spacing */
+  .cta-section.cta-padded {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+
+  /* Pricing page mobile */
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-buttons {
+    flex-direction: column;
+  }
+
+  .intro-buttons .btn {
+    width: 100%;
+  }
+
+  .membership-plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .single-session-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .single-session-price {
+    text-align: left;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .pricing-intro {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-sm);
+  }
+
+  .pricing-intro .section-heading.large {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .membership-plans {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-card {
+    padding: var(--space-md);
+  }
+
+  .plan-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .plan-price .price-amount {
+    font-size: 1.75rem;
+  }
+
+  .steps-grid {
+    gap: var(--space-sm);
+  }
+
+  .step-card {
+    padding: var(--space-sm);
+  }
+
+  .pricing-faq .accordion {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,319 @@
+/* ============================================
+   APPOINTMENTS PAGE STYLES
+   ============================================
+   Styles specific to the Appointments page
+   Source: styles/styles.css (lines 2719-2938)
+   ============================================ */
+
+.appointments-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.appointments-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid var(--color-cream);
+}
+
+.appointments-header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.go-back-link {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-navy);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.go-back-link:hover {
+  color: var(--color-olive);
+}
+
+.go-back-link span {
+  font-size: 1.2rem;
+}
+
+.appointments-main {
+  flex: 1;
+  padding-top: 80px;
+}
+
+.appointments-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 80px);
+}
+
+.appointments-image {
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+.appointments-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.appointments-content {
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.appointments-content h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--color-navy);
+  margin-bottom: var(--space-md);
+  line-height: 1.2;
+}
+
+.appointments-content .intro-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.appointments-content .how-it-works {
+  margin-bottom: var(--space-md);
+}
+
+.appointments-content .how-it-works h2 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: var(--space-sm);
+}
+
+.appointments-content .how-it-works ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.appointments-content .how-it-works li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  padding-left: 0.5rem;
+}
+
+.appointments-content .closing-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+/* Appointment Form */
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.appointment-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.appointment-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.appointment-form label {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-navy);
+}
+
+.appointment-form label .required {
+  color: #c00;
+  font-size: 0.85rem;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  background: #fff;
+  color: var(--color-text);
+  transition: border-color 0.2s ease;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+  outline: none;
+  border-color: var(--color-navy);
+}
+
+.appointment-form input::placeholder,
+.appointment-form textarea::placeholder {
+  color: #999;
+}
+
+.appointment-form select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.appointment-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.appointments-submit {
+  align-self: flex-start;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  margin-top: var(--space-sm);
+}
+
+.form-disclaimer {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #666;
+  margin-top: var(--space-sm);
+}
+
+.form-disclaimer a {
+  color: var(--color-olive);
+  text-decoration: underline;
+}
+
+.form-disclaimer a:hover {
+  color: var(--color-navy);
+}
+
+.appointments-footer {
+  margin-top: auto;
+}
+
+/* ============================================
+   Media Queries - Appointments Page
+   ============================================ */
+
+/* Small Tablet / Single Column Layout (max-width: 768px) */
+@media (max-width: 768px) {
+  .appointments-layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .appointments-image {
+    position: relative;
+    top: auto;
+    height: 400px;
+    order: -1;
+  }
+
+  .appointments-content {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .appointment-form .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .appointments-main {
+    padding-top: 0;
+  }
+
+  .appointments-header {
+    position: relative;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .appointments-content {
+    padding: var(--space-lg) var(--space-sm);
+  }
+
+  .appointments-content h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: var(--space-sm);
+  }
+
+  .appointments-content .intro-text {
+    font-size: 1rem;
+  }
+
+  .appointments-content .how-it-works h2 {
+    font-size: 1rem;
+  }
+
+  .appointment-form {
+    gap: var(--space-sm);
+  }
+
+  .appointment-form .form-group {
+    gap: 0.25rem;
+  }
+
+  .appointment-form label {
+    font-size: 0.9rem;
+  }
+
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    font-size: 0.95rem;
+    padding: 0.75rem 0.875rem;
+  }
+
+  .appointments-submit {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  .form-disclaimer {
+    font-size: 0.8rem;
+  }
+
+  .go-back-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .go-back-link,
+  .appointment-form input:focus,
+  .appointment-form select:focus,
+  .appointment-form textarea:focus {
+    transition: none;
+  }
+}

@@ -1,0 +1,183 @@
+/* ============================================
+   TREATMENTS PAGE STYLES
+   ============================================
+   Styles specific to the Treatments page
+   Source: styles/styles.css (lines 1690-1777)
+   ============================================ */
+
+.treatments-intro {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+.treatments-intro .section-heading.large {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+.treatments-intro .text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.treatments-intro .text-column p {
+  margin-bottom: var(--space-md);
+}
+
+/* Mobile-only image: hidden on desktop */
+.treatments-intro .mobile-only-image {
+  display: none !important;
+}
+
+/* Desktop-only image: shown on desktop */
+.treatments-intro .desktop-only-image {
+  display: flex !important;
+}
+
+.treatments-intro .image-column .image-container {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.treatments-intro .image-column .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Treatments Section */
+.treatments-section {
+  padding: var(--space-xl) 0;
+  background: var(--color-white);
+}
+
+.treatments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+/* Treatment Card */
+.treatment-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.treatment-card .image-container {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: var(--space-sm);
+}
+
+.treatment-card .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.treatment-card:hover .image-container img {
+  transform: scale(1.05);
+}
+
+.treatment-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-brown);
+  margin-bottom: var(--space-xs);
+}
+
+.treatment-card p {
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.treatment-card .btn {
+  align-self: flex-start;
+}
+
+/* ============================================
+   Media Queries - Treatments Page
+   ============================================ */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Treatments grid - 2 columns on tablet */
+  .treatments-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+}
+
+/* Small Tablet / Single Column Layout (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Show mobile-only image on mobile */
+  .treatments-intro .mobile-only-image {
+    display: block !important;
+    aspect-ratio: 1 / 1;
+    max-height: 350px;
+    margin-bottom: var(--space-md);
+    overflow: hidden;
+  }
+
+  .treatments-intro .mobile-only-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Hide desktop-only image on mobile */
+  .treatments-intro .desktop-only-image {
+    display: none !important;
+  }
+
+  .no-hero main {
+    padding-top: 100px;
+  }
+
+  .treatments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .treatment-card .image-container {
+    aspect-ratio: 1 / 1;
+  }
+
+  .treatments-intro .section-heading.large {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .treatments-intro {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-lg);
+  }
+
+  .treatments-intro .section-heading.large {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .treatment-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .treatment-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .treatment-card .image-container img {
+    transition: none;
+  }
+}

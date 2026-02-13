@@ -1,0 +1,326 @@
+/* ============================================
+   INDIVIDUAL TREATMENT PAGES
+   ============================================
+   Styles for individual treatment detail pages
+   Source: styles/styles.css (lines 3743-3970)
+   ============================================ */
+
+/* Treatment Hero Section */
+.treatment-hero {
+  padding: var(--space-xl) 0 var(--space-md);
+  text-align: center;
+}
+
+.treatment-hero .section-heading {
+  margin-bottom: 0;
+}
+
+/* Treatment Hero Image */
+.treatment-image-section {
+  padding: 0 0 var(--space-lg);
+}
+
+.treatment-hero-image {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.treatment-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+/* Treatment Content Layout */
+.treatment-content {
+  padding: var(--space-lg) 0;
+}
+
+.treatment-layout {
+  gap: var(--space-xl);
+  align-items: flex-start;
+}
+
+.treatment-layout .text-column {
+  flex: 1.2;
+}
+
+.treatment-layout .image-column {
+  flex: 0.8;
+  position: sticky;
+  top: 120px;
+}
+
+.treatment-side-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.treatment-side-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.treatment-list {
+  margin: var(--space-sm) 0 var(--space-md);
+  padding-left: 1.5em;
+}
+
+.treatment-list li {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+
+/* Treatment Approach Section */
+.treatment-approach {
+  padding: var(--space-xl) 0;
+  background-color: var(--color-cream);
+}
+
+.treatment-intro-text {
+  max-width: 800px;
+  margin: 0 auto var(--space-md);
+  text-align: center;
+}
+
+.treatment-methods {
+  max-width: 800px;
+  margin: 0 auto var(--space-md);
+  padding-left: 1.5em;
+}
+
+.treatment-methods li {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.treatment-methods strong {
+  color: var(--color-navy);
+}
+
+/* FAQ Section */
+.treatment-faq {
+  padding: var(--space-xl) 0;
+}
+
+.treatment-faq .section-heading {
+  margin-bottom: var(--space-lg);
+}
+
+.faq-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-navy);
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: var(--color-olive);
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding-bottom: var(--space-md);
+}
+
+.faq-answer p {
+  margin-bottom: var(--space-sm);
+}
+
+.faq-answer ul {
+  padding-left: 1.5em;
+  margin-bottom: var(--space-sm);
+}
+
+.faq-answer ul li {
+  margin-bottom: 0.5em;
+}
+
+/* ============================================
+   Media Queries - Treatment Pages
+   ============================================ */
+
+/* Small Tablet / Single Column Layout (max-width: 768px) */
+@media (max-width: 768px) {
+  .treatment-hero {
+    padding: var(--space-lg) 0 var(--space-sm);
+  }
+
+  .treatment-hero-image {
+    max-height: 350px;
+  }
+
+  .treatment-layout {
+    flex-direction: column;
+  }
+
+  .treatment-layout .image-column {
+    position: relative;
+    top: 0;
+    order: -1;
+  }
+
+  .treatment-side-image {
+    max-height: 300px;
+  }
+
+  .treatment-side-image img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .treatment-approach {
+    padding: var(--space-lg) 0;
+  }
+
+  .treatment-intro-text,
+  .treatment-methods {
+    text-align: left;
+    padding: 0 var(--container-padding);
+  }
+
+  .treatment-faq {
+    padding: var(--space-lg) 0;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: var(--space-sm) 0;
+  }
+
+  .treatment-content {
+    padding: var(--space-md) 0;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .treatment-hero {
+    padding: var(--space-md) 0 var(--space-sm);
+  }
+
+  .treatment-hero-image {
+    max-height: 250px;
+    border-radius: var(--radius-md);
+  }
+
+  .treatment-side-image {
+    max-height: 250px;
+    border-radius: var(--radius-md);
+  }
+
+  .treatment-side-image img {
+    max-height: 250px;
+  }
+
+  .treatment-layout {
+    gap: var(--space-md);
+  }
+
+  .treatment-intro-text,
+  .treatment-methods {
+    max-width: 100%;
+    padding: 0 var(--space-md);
+  }
+
+  .treatment-list {
+    margin: var(--space-xs) 0 var(--space-sm);
+    padding-left: 1.25em;
+  }
+
+  .treatment-list li {
+    margin-bottom: 0.35em;
+    font-size: 0.95rem;
+  }
+
+  .treatment-methods li {
+    margin-bottom: 0.75em;
+    font-size: 0.95rem;
+  }
+
+  .treatment-approach {
+    padding: var(--space-md) 0;
+  }
+
+  .treatment-faq {
+    padding: var(--space-md) 0;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+    padding: var(--space-sm) 0;
+  }
+
+  .faq-icon {
+    font-size: 1.25rem;
+  }
+
+  .faq-answer {
+    max-height: 0;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 400px;
+  }
+
+  .faq-answer p {
+    font-size: 0.95rem;
+  }
+
+  .faq-answer ul li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .faq-question,
+  .faq-icon,
+  .faq-answer {
+    transition: none;
+  }
+}

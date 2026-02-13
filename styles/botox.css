@@ -1,0 +1,220 @@
+/* ============================================
+   BOTOX PAGE STYLES
+   ============================================
+   Styles specific to the Botox page
+   Source: styles/styles.css (lines 2377-2482)
+   ============================================ */
+
+.botox-intro {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+.botox-intro .section-heading.large {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+.botox-intro .text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.botox-intro .text-column p {
+  margin-bottom: var(--space-md);
+}
+
+/* Mobile-only image: hidden on desktop */
+.botox-intro .mobile-only-image {
+  display: none !important;
+}
+
+/* Desktop-only image: shown on desktop */
+.botox-intro .desktop-only-image {
+  display: flex !important;
+}
+
+.botox-how-it-helps {
+  padding: var(--space-xl) 0;
+  background: var(--color-cream);
+}
+
+.botox-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.benefit-card {
+  background: var(--color-white);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.benefit-card h3 {
+  color: var(--color-olive);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.botox-pricing {
+  padding: var(--space-xl) 0;
+  background: var(--color-white);
+}
+
+.botox-pricing .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.botox-pricing .pricing-card {
+  background: var(--color-cream);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.botox-pricing .pricing-card .price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: var(--space-xs);
+}
+
+.botox-pricing .pricing-card .price .unit {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text-light);
+}
+
+.botox-pricing .pricing-card .description {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.pricing-note {
+  text-align: center;
+  margin-top: var(--space-md);
+  font-style: italic;
+  color: var(--color-text-light);
+}
+
+.botox-why-choose {
+  padding: var(--space-lg) 0;
+  background: var(--color-cream);
+}
+
+.botox-why-choose p {
+  max-width: 800px;
+  margin: var(--space-md) auto 0;
+  text-align: center;
+}
+
+/* ============================================
+   Media Queries - Botox Page
+   ============================================ */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Botox page responsive */
+  .botox-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .botox-pricing .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+  }
+}
+
+/* Small Tablet / Single Column Layout (max-width: 768px) */
+@media (max-width: 768px) {
+  .botox-intro {
+    padding-bottom: var(--space-xl);
+  }
+
+  /* Show mobile-only image on mobile */
+  .botox-intro .mobile-only-image {
+    display: block !important;
+    aspect-ratio: 1 / 1;
+    max-height: 350px;
+    margin-bottom: var(--space-md);
+    overflow: hidden;
+  }
+
+  .botox-intro .mobile-only-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Hide desktop-only image on mobile */
+  .botox-intro .desktop-only-image {
+    display: none !important;
+  }
+
+  /* Botox page mobile */
+  .botox-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .botox-pricing .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .botox-intro .section-heading.large {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .botox-intro {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-lg);
+  }
+
+  .botox-intro .section-heading.large {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .benefit-card {
+    padding: var(--space-sm);
+  }
+
+  .benefit-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.9rem;
+  }
+
+  .botox-pricing .pricing-card {
+    padding: var(--space-md);
+  }
+
+  .botox-pricing .pricing-card .price {
+    font-size: 1.5rem;
+  }
+
+  .botox-how-it-helps {
+    padding: var(--space-lg) 0;
+  }
+
+  .botox-why-choose {
+    padding: var(--space-md) 0;
+  }
+}
